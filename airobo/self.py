@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
 
+import pyttsx3
 import wikipedia
-import 
+import wolframalpha
+import comtypes
