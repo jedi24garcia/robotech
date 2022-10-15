@@ -7,7 +7,7 @@ import wolframalpha
 
 #import comtypes
 
-print("Welcome fellow humans")
+print("Welcome fellow humans.")
 
 r = sr.Recognizer()
 
