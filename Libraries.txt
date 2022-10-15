@@ -3,6 +3,6 @@
 pip3 install pyttsx3
 pip3 install wikipedia
 pip3 install wolframalpha
-pip3 install comtypes
+pip3 install comtypes = Unfortunately COMTypes is designed for Windows only, not Linux 
 
 
