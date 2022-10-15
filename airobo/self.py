@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 
+import speech_recognition as sr
 import pyttsx3
 import wikipedia
 import wolframalpha
-import comtypes
+
+#import comtypes
+
+print("Welcome fellow humans")
+
+r = sr.Recognizer()
+
+class SelfSpeak():
+  def __init__(self, speak):
+    self = speak
+
