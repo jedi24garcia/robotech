@@ -6,3 +6,7 @@ pip3 install wolframalpha
 pip3 install comtypes = Unfortunately COMTypes is designed for Windows only, not Linux 
 
 
+To do:
+1)Find another way to replace COMTypes for Mac
+2)Find a way for microphone to work
+
