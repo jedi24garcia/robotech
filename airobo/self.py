@@ -4,7 +4,6 @@ import speech_recognition as sr
 import pyttsx3
 import wikipedia
 import wolframalpha
-
 #import comtypes
 
 print("Welcome fellow humans.")
@@ -15,3 +14,4 @@ class SelfSpeak():
   def __init__(self, speak):
     self = speak
 
+time.sleep(3)
