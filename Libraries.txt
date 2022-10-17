@@ -8,5 +8,5 @@ pip3 install comtypes = Unfortunately COMTypes is designed for Windows only, not
 
 To do:
 1)Find another way to replace COMTypes for Mac
-2)Find a way for microphone to work
+2)Find a way for microphone to work = r=sr.Recognizer()
 
