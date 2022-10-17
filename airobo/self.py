@@ -8,11 +8,26 @@ import wolframalpha
 
 print("Welcome fellow humans.") #sample response
 
-r = sr.Recognizer()
-r = sr.Microphone()
+def speak(text):
+  engine.say(text)
+  engine.runAndWait()
 
+# This function obtain audio from microphone
+# def selfCommand():
+  r = sr.Recognizer()
+  with sr.Microphone as source:
+    print("Listening.. ")
+    audio = r.listen(source, offset=4, duration=5)
+  try:
+    statement=r.recognize_google(audio,language='en-in')
+    print("Google: you said\n")
+  # print("Google: you said\n" + sr.recognizer_google(audio))
+  except:
+    print("An exception occured")
+
+# this function is still irrelevant 
 class SelfSpeak():
   def __init__(self, speak):
     self = speak
-
-'''time.sleeps(3)'''
+    
+# will need to make microphone work and computer say "print("Welcome fellow humans.")"
