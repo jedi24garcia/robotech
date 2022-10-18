@@ -6,18 +6,22 @@ import wikipedia
 import wolframalpha
 import datetime
 
-print("Welcome fellow humans.")
+print("Welcome humans.")
+
+User_Input = input("Please enter your message here: ")
+
+selfResponse = ("How are you?")
 
 def desire():
-  hour=datetime.datetime.now().hour
-  if hour>=0 and hour<12:
-    print("Good morning")
-  elif hour>=0 and hour<18:
-    print("Good afternoob")
+  if User_Input == selfResponse:
+    print("Im good, how about yourself? ")
   else:
-    print("Good evening")
+    print("Type again")
+
+desire()
 
 # This function obtain audio from microphone
+"""
 def selfCommand():
   r = sr.Recognizer()
   with sr.Microphone as source:
@@ -30,13 +34,7 @@ def selfCommand():
   except Exception as e:
     print("Forgive me, please try again")
     return "None"
-    
-desire()
-selfCommand()
+"""
 
-# this function is still irrelevant 
-class SelfSpeak():
-  def __init__(self, speak):
-    self = speak
-    
+
 # will need to make microphone work and computer say "print("Welcome fellow humans.")"
