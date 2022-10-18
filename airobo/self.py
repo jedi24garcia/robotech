@@ -4,16 +4,21 @@ import speech_recognition as sr
 import pyttsx3
 import wikipedia
 import wolframalpha
-#import comtypes
+import datetime
 
-print("Welcome fellow humans.") #sample response
+print("Welcome fellow humans.")
 
-def speak(text):
-  engine.say(text)
-  engine.runAndWait()
+def desire():
+  hour=datetime.datetime.now().hour
+  if hour>=0 and hour<12:
+    print("Good morning")
+  elif hour>=0 and hour<18:
+    print("Good afternoob")
+  else:
+    print("Good evening")
 
 # This function obtain audio from microphone
-# def selfCommand():
+def selfCommand():
   r = sr.Recognizer()
   with sr.Microphone as source:
     print("Listening.. ")
@@ -25,7 +30,9 @@ def speak(text):
   except Exception as e:
     print("Forgive me, please try again")
     return "None"
-
+    
+desire()
+selfCommand()
 
 # this function is still irrelevant 
 class SelfSpeak():
