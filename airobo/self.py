@@ -22,8 +22,10 @@ def speak(text):
     statement=r.recognize_google(audio,language='en-in')
     print("Google: you said\n")
   # print("Google: you said\n" + sr.recognizer_google(audio))
-  except:
-    print("An exception occured")
+  except Exception as e:
+    print("Forgive me, please try again")
+    return "None"
+
 
 # this function is still irrelevant 
 class SelfSpeak():
