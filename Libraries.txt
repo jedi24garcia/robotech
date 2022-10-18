@@ -1,4 +1,4 @@
-"Installed Libraries using pip3"
+"Installed Libraries using pip3 for this project"
 
 pip3 install pyttsx3
 pip3 install wikipedia
@@ -6,7 +6,5 @@ pip3 install wolframalpha
 pip3 install comtypes = Unfortunately COMTypes is designed for Windows only, not Linux 
 
 
-To do:
-1)Find another way to replace COMTypes for Mac
-2)Find a way for microphone to work = r=sr.Recognizer()
+
 
