@@ -8,12 +8,12 @@ import datetime
 
 print("Welcome humans.")
 
-self_response  = input("Please enter your message here: ")
+self_memory = input("Please enter your message here: ")
 
-UserInput = ("How are you?")
-UserInput2 = ("Hi")
+UserInput = ("I'm good, how about you?")
+#UserInput2 = ("Hi")
 
-
+"""
 def desire():
   if self_response == UserInput:
     print("Im good, how about yourself? ")
@@ -23,6 +23,22 @@ def desire():
     print("I'm sorry, please try again.")
 
 desire()
+"""
 
+class SelfResponse:
+  def __init__(self, response):
+    self.response = response
+  
+  if self_memory == UserInput:
+    print("That is okay")
+  else:
+    print("Try again")
+
+R1 = SelfResponse(UserInput)
+
+print(R1.response)
+
+     
+# Fix this error
 
 # will need to make computer response using speech
