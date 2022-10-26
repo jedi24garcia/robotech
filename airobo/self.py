@@ -10,8 +10,7 @@ print("Welcome humans.")
 
 self_memory = input("Please enter your message here: ")
 
-UserInput = ("I'm good, how about you?")
-#UserInput2 = ("Hi")
+UserInput = ("Hi")
 
 """
 def desire():
@@ -30,7 +29,7 @@ class SelfResponse:
     self.response = response
   
   if self_memory == UserInput:
-    print("That is okay")
+    print("Hello there, how are you?")
   else:
     print("Try again")
 
@@ -38,7 +37,5 @@ R1 = SelfResponse(UserInput)
 
 print(R1.response)
 
-     
-# Fix this error
-
+    
 # will need to make computer response using speech
