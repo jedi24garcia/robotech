@@ -6,7 +6,7 @@ import wikipedia
 import wolframalpha
 import datetime
 
-print("Welcome humans.")
+print("Welcome Humans.")
 
 self_memory = input("Please enter your message here: ")
 
