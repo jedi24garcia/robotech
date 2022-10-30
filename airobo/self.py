@@ -12,18 +12,6 @@ self_memory = input("Please enter your message here: ")
 
 UserInput = ("Hi")
 
-"""
-def desire():
-  if self_response == UserInput:
-    print("Im good, how about yourself? ")
-  if self_response == UserInput2:
-    print("Hello")
-  else:
-    print("I'm sorry, please try again.")
-
-desire()
-"""
-
 class SelfResponse:
   def __init__(self, response):
     self.response = response
