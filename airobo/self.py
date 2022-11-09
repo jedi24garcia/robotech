@@ -25,5 +25,5 @@ R1 = SelfResponse(UserInput)
 
 print(R1.response)
 
-# will need to fix bug (repeated output)    
-# will need to make computer response using speech
+
+# use virtual.py for next session
