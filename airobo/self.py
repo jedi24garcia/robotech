@@ -6,6 +6,8 @@ import wikipedia
 import wolframalpha
 import datetime
 
+
+"""
 print("Welcome Humans.")
 
 self_memory = input("Please enter your message here: ")
@@ -25,5 +27,8 @@ R1 = SelfResponse(UserInput)
 
 print(R1.response)
 
+"""
 
-# use virtual.py for next session
+print("Welcome!")
+
+
