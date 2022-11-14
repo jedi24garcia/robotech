@@ -2,33 +2,16 @@
 
 import speech_recognition as sr
 import pyttsx3
-import wikipedia
-import wolframalpha
-import datetime
-
-
-"""
-print("Welcome Humans.")
-
-self_memory = input("Please enter your message here: ")
-
-UserInput = ("Hi")
-
-class SelfResponse:
-  def __init__(self, response):
-    self.response = response
-  
-  if self_memory == UserInput:
-    print("Hello there, how are you?")
-  else:
-    print("Try again")
-
-R1 = SelfResponse(UserInput)
-
-print(R1.response)
-
-"""
+# import wikipedia
+# import wolframalpha
+# import datetime
 
 print("Welcome!")
 
+engine = pyttsx3.init()
 
+def speak(text):
+  engine.say(text)
+  engine.runAndWait()
+
+speak("Dota 2 is a 2013 multiplayer online battle arena video game by Valve. The game is a sequel to Defense of the Ancients, a community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos")
