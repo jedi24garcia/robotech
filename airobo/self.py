@@ -8,6 +8,8 @@ import pyttsx3
 
 print("Welcome!")
 
+input_user = input("Say something: ")
+
 engine = pyttsx3.init()
 VoiceSpeed = 10
 GivenSpeech = "Dota 2 is a 2013 multiplayer online battle arena video game by Valve. The game is a sequel to Defense of the Ancients, a community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos."
