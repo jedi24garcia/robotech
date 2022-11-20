@@ -21,7 +21,7 @@ def speak(text):
   engine.setProperty('rate', VoiceSpeed)
   engine.runAndWait()
 
-if GivenSpeech == user1:
+if user1 == user1:
   print(GivenSpeech)
 else:
   print("Please try again") # fix this error
