@@ -13,15 +13,19 @@ print("Welcome!")
 input_user = input("Say something: ")
 
 engine = pyttsx3.init()
-NewVoiceRate = 20
+# NewVoiceRate = 20
 GivenSpeech = "Dota 2 is a 2013 multiplayer online battle arena video game by Valve. The game is a sequel to Defense of the Ancients, a community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos."
 
-rate = engine.getProperty("rate")
+# rate = engine.getProperty("rate")
 
 def speak(text):
   engine.say(text)
-  engine.setProperty('rate', NewVoiceRate)
+# engine.setProperty('rate', NewVoiceRate)
   engine.runAndWait()
+
+rate = engine.getProperty("rate")
+print(rate)
+engine.setProperty("rate", 180)
 
 """
 if user1 == user1:
@@ -30,4 +34,4 @@ else:
   print("Please try again") # fix this error
 """
 
-speak(GivenSpeech) # make this slower speed
+speak(GivenSpeech) # say these words slower
