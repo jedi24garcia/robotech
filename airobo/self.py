@@ -27,11 +27,4 @@ rate = engine.getProperty("rate")
 print(rate)
 engine.setProperty("rate", 180)
 
-"""
-if user1 == user1:
-  print(GivenSpeech)
-else:
-  print("Please try again") # fix this error
-"""
-
 speak(GivenSpeech) # say these words slower
