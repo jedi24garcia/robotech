@@ -8,19 +8,13 @@ import pyttsx3
 
 print("Welcome!")
 
-# user1 = "Dota"
-
 input_user = input("Say something: ")
 
 engine = pyttsx3.init()
-# NewVoiceRate = 20
-GivenSpeech = "Dota 2 is a 2013 multiplayer online battle arena video game by Valve. The game is a sequel to Defense of the Ancients, a community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos."
-
-# rate = engine.getProperty("rate")
+GivenSpeech = "I’m increasingly inclined to think that there should be some regulatory oversight, maybe at the national and international level, just to make sure that we don’t do something very foolish. I mean with artificial intelligence we’re summoning the demon"
 
 def speak(text):
   engine.say(text)
-# engine.setProperty('rate', NewVoiceRate)
   engine.runAndWait()
 
 rate = engine.getProperty("rate")
