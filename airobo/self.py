@@ -22,3 +22,5 @@ print(rate)
 engine.setProperty("rate", 180)
 
 speak(GivenSpeech) # say these words slower
+
+# not too sure what to add tbh
