@@ -13,6 +13,11 @@ input_user = input("Say something: ")
 engine = pyttsx3.init()
 GivenSpeech = "I’m increasingly inclined to think that there should be some regulatory oversight, maybe at the national and international level, just to make sure that we don’t do something very foolish. I mean with artificial intelligence we’re summoning the demon"
 
+# will need to make input_user speak when user run program 
+def UserInputSpeak():
+  engine.say()
+  engine.runAndWait()
+
 def speak(text):
   engine.say(text)
   engine.runAndWait()
@@ -22,5 +27,5 @@ print(rate)
 engine.setProperty("rate", 180)
 
 speak(GivenSpeech) # say these words slower
+UserInputSpeak(input_user)
 
-# not too sure what to add tbh
