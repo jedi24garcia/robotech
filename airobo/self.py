@@ -6,11 +6,11 @@ import wikipedia
 import datetime
 
 print("Hello, user!")
-
-input_user = input("Say something: ")
+newVoiceRate = 150
 
 engine = pyttsx3.init()
-engine.setProperty("voice", "voices[0].id")
+engine.setProperty("voice", "voices[1].id")
+engine.setProperty("rate", newVoiceRate)
 
 def speak(text):
   engine.say(text)
@@ -41,6 +41,6 @@ def TakeCommands():
        return "None"
     return statement
 
-speak("I'm now awaiting your command")
+speak("Ready for your command ser")
 wishGreetings()
 
