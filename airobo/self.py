@@ -5,17 +5,42 @@ import pyttsx3
 import wikipedia
 import datetime
 
-print("Welcome!")
+print("Hello, user!")
 
 input_user = input("Say something: ")
 
 engine = pyttsx3.init()
+engine.setProperty("voice", "voices[0].id")
 
 def speak(text):
   engine.say(text)
   engine.runAndWait()
 
-speak("Hello, user!")
+# depending on the time, computer will say greetings below:
+def wishGreetings():
+  hour=datetime.datetime.now().hour    
+  if hour>=0 and hour<12:
+    speak("Good Morning")
+  elif hour>=12 and hour<18:
+    speak("Good Afternoon")
+  else:
+    speak("Good Evening")
 
+def TakeCommands():
+  r = sr.Recognizer()
+  with sr.Microphone() as source:
+    print("Listening...")
+    audio = r.listen(source)
+    
+    try:
+       statement=r.recognize_google(audio,language='en-in')
+       print(f"user said:{statement}\n")
 
-# will need to add more features
+    except Exception as e:
+       speak("Pardon me, please say that again")
+       return "None"
+    return statement
+
+speak("I'm now awaiting your command")
+wishGreetings()
+
