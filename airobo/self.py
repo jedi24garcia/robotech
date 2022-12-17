@@ -33,14 +33,22 @@ def TakeCommands():
     audio = r.listen(source)
     
     try:
-       statement=r.recognize_google(audio,language='en-in')
+       statement = r.recognize_google(audio,language='en-in')
        print(f"user said:{statement}\n")
 
     except Exception as e:
-       speak("Pardon me, please say that again")
+       speak("Can you please repeat that again?")
        return "None"
     return statement
 
 speak("Ready for your command ser")
 wishGreetings()
 
+
+if __name__ == "__main__":
+
+  while True:
+    speak("How can I help?")
+    statement = TakeCommands().lower()
+    if statement == 0:
+      continue
