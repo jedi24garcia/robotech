@@ -12,7 +12,10 @@ engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
 
+class NSSpeechSynthesizer : object
+
 def speak(text):
+  engine = pyttsx3.drivers('NSSpeechSynthesizer')
   engine.say(text)
   engine.runAndWait()
 
@@ -55,6 +58,7 @@ if __name__ == "__main__":
 
 # TODO: Remember same issue with AI-Personal Voice
 # TODO: AttributeError: module 'speech_recognition' has no attribute 'Microphone'
+# TODO: TypeError: 'module' object is not callable
 
 # TODO: Follow step:
 """
