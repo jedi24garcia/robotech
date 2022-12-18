@@ -53,4 +53,5 @@ if __name__ == "__main__":
     if statement == 0:
       continue
 
+# TODO: remember same issue with AI-Personal Voice
 # TODO: AttributeError: module 'speech_recognition' has no attribute 'Microphone'
