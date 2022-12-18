@@ -52,3 +52,5 @@ if __name__ == "__main__":
     statement = TakeCommands().lower()
     if statement == 0:
       continue
+
+# TODO: AttributeError: module 'speech_recognition' has no attribute 'Microphone'
