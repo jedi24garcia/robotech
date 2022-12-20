@@ -12,10 +12,10 @@ engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
 
-class NSSpeechSynthesizer : object
+# class NSSpeechSynthesizer : object
 
 def speak(text):
-  engine = pyttsx3.drivers('NSSpeechSynthesizer')
+# engine = pyttsx3.drivers()
   engine.say(text)
   engine.runAndWait()
 
