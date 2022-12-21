@@ -8,6 +8,7 @@ import datetime
 print("Hello, user!")
 newVoiceRate = 150
 
+
 engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
@@ -58,29 +59,3 @@ if __name__ == "__main__":
 
 # TODO: Remember same issue with AI-Personal Voice
 # TODO: AttributeError: module 'speech_recognition' has no attribute 'Microphone'
-
-# TODO: Follow step:
-"""
-These steps worked on M1 Pro chips
-
-Install portaudio
-brew install portaudio
-Link portaudio
-brew link portaudio
-Copy the path where portaudio was installed (use it in the next step)
-brew --prefix portaudio
-Create .pydistutils.cfg in your home directory
-sudo nano $HOME/.pydistutils.cfg
-then paste the following
-
-[build_ext]
-include_dirs=<PATH FROM STEP 3>/include/
-library_dirs=<PATH FROM STEP 3>/lib/
-
-Install pyaudio
-pip install pyaudio
-
-or
-
-pip3 install pyaudio
-"""
