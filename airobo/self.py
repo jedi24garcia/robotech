@@ -56,4 +56,8 @@ if __name__ == "__main__":
     statement = TakeCommands().lower()
     if statement == 0:
       continue
-
+    
+    if "Ok bye" in statement or "stop" in statement:
+      speak("Bye bye now")
+      print("Bye bye now")
+      break
