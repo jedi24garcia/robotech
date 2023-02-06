@@ -56,6 +56,7 @@ if __name__ == "__main__":
 
   while True:
     speak("How can I help?")
+    print("How can I help?")
     statement = TakeCommands().lower()
     if statement == 0:
       continue
