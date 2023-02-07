@@ -1,0 +1,2 @@
+8/02/2023
+1. Will need to install PyAudio and somehow make it work
