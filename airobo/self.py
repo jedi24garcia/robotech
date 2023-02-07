@@ -35,7 +35,11 @@ def TakeCommands():
   with sr.Microphone() as source:
     print("Listening...")
     audio = r.listen(source)
-    
+  try:
+    print("You said" + r.recognize(audio))
+  except LookupError:
+    print("Could not understand audio")
+  
     try:
        statement = r.recognize_google(audio,language='en-in')
        print(f"user said:{statement}\n")
