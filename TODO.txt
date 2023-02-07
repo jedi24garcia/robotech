@@ -1,2 +1,5 @@
 8/02/2023
-1. Will need to install PyAudio and somehow make it work
+1. Will need to install PyAudio and somehow make it work  
+  Steps:
+  a) brew install portaudio
+  b) pip3 install pyaudio
