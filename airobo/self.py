@@ -4,7 +4,7 @@ import speech_recognition as sr  # version 3.9.0
 import pyttsx3
 import wikipedia
 import datetime
-import pyaudio
+# import pyaudio
 
 password = "admiral"
 
@@ -13,7 +13,7 @@ while True:
   if user_input == password:
     break
   else:
-    print("Please try again: ")
+    print("Wrong! Please try again!")
 
 print("Hello, user!")
 newVoiceRate = 150
@@ -23,20 +23,19 @@ engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
 
 def speak(text):
-# engine = pyttsx3.drivers()
   engine.say(text)
   engine.runAndWait()
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
   hour=datetime.datetime.now().hour    
-  if hour>=0 and hour<12:
+  if hour>=1 and hour<12:
     speak("Good Morning")
     print("Good Morning")
   elif hour>=12 and hour<18:
     speak("Good Afternoon")
     print("Good Afternoon")
-  else:
+  elif hour>=19 and hour<00:
     speak("Good Evening")
     print("Good Evening")
 
