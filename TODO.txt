@@ -1,5 +1,5 @@
 8/02/2023
 1. Will need to install PyAudio and somehow make it work  
   Steps:
-  a) brew install portaudio
-  b) pip3 install pyaudio
+  a) Just downloaded the new Speech_Recognition version = 3.9.0. This time it has the Micrphone  attribute.
+  b) Will still have to download pyaudio
