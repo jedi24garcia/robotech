@@ -6,6 +6,15 @@ import wikipedia
 import datetime
 import pyaudio
 
+password = "admiral"
+
+while True:
+  user_input = input("Please enter password: ")
+  if user_input == password:
+    break
+  else:
+    print("Please try again: ")
+
 print("Hello, user!")
 newVoiceRate = 150
 
