@@ -3,3 +3,23 @@
   Steps:
   a) Just downloaded the new Speech_Recognition version = 3.9.0. This time it has the Micrphone  attribute.
   b) Will still have to download pyaudio
+  FINALLY FIXED THIS ERROR: Steps to follow:
+  
+	These steps worked on M1 Pro chips
+
+1.) Install portaudio
+brew install portaudio
+2.) Link portaudio
+brew link portaudio
+3.) Copy the path where portaudio was installed (use it in the next step)
+brew --prefix portaudio
+4.)Create .pydistutils.cfg in your home directory
+sudo nano $HOME/.pydistutils.cfg
+5.) Then paste the following
+[build_ext]
+include_dirs=<PATH FROM STEP 3>/include/
+library_dirs=<PATH FROM STEP 3>/lib/
+6.) Install pyaudio
+pip install pyaudio
+or
+pip3 install pyaudio
