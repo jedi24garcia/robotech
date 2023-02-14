@@ -4,7 +4,7 @@ import speech_recognition as sr  # version 3.9.0
 import pyttsx3
 import wikipedia
 import datetime
-# import pyaudio
+import pyaudio
 
 password = "admiral"
 
@@ -45,7 +45,7 @@ def TakeCommands():
     print("Listening...")
     audio = r.listen(source)
   try:
-    print("You said" + r.recognize(audio))
+    print("You said" + r.recognize_api(audio))
   except LookupError:
     print("Could not understand audio")
   
