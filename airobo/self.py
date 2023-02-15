@@ -79,5 +79,14 @@ if __name__ == "__main__":
     elif "Logging off now" in statement or "signing out" in statement:
       speak("Okay, terminating machine now")
       subprocess.call(["Shutdow"])
+"""
+    elif "weather" in statement:
+      api_key = "8ef61edcf1c576d65d836254e11ea420"
+"""
+
+# will need to fix = TypeError: recognize_api() missing 1 required positional argument: 'client_access_token' 
+
+
+
      
 time.sleep(5)
