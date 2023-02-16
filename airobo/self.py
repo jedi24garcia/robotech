@@ -45,7 +45,7 @@ def TakeCommands():
     print("Listening...")
     audio = r.listen(source)
   try:
-    print("You said" + r.recognize_api(audio))
+    print("You said" + r.recognize_google(audio)) # changed from r.recognize_api to r.recogniz_google
   except LookupError:
     print("Could not understand audio")
   
