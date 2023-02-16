@@ -5,7 +5,10 @@ import pyttsx3
 import wikipedia
 import datetime
 import pyaudio
-import AppKit
+import pyttsx3
+import time 
+import sys
+from AppKit import NSSpeechSynthesizer
 
 password = "admiral"
 
@@ -19,9 +22,11 @@ while True:
 print("Hello, user!")
 newVoiceRate = 170
 
-engine = pyttsx3.init()
+engine = pyttsx3.init("nsss")
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
+
+# add class NSSpeechDriver here
 
 def speak(text):
   engine.say(text)
