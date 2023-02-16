@@ -5,6 +5,7 @@ import pyttsx3
 import wikipedia
 import datetime
 import pyaudio
+import AppKit
 
 password = "admiral"
 
