@@ -44,10 +44,6 @@ def TakeCommands():
   with sr.Microphone() as source:
     print("Listening...")
     audio = r.listen(source)
-  try:
-    print("You said" + r.recognize_google(audio)) # changed from r.recognize_api to r.recogniz_google
-  except LookupError:
-    print("Could not understand audio")
   
     try:
        statement = r.recognize_google(audio,language='en-in')
@@ -79,14 +75,5 @@ if __name__ == "__main__":
     elif "Logging off now" in statement or "signing out" in statement:
       speak("Okay, terminating machine now")
       subprocess.call(["Shutdown"])
-"""
-    elif "weather" in statement:
-      api_key = "8ef61edcf1c576d65d836254e11ea420"
-"""
 
-# will need to fix = TypeError: recognize_api() missing 1 required positional argument: 'client_access_token' 
-
-
-
-     
 time.sleep(5)
