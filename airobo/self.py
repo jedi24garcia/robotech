@@ -87,6 +87,10 @@ if __name__ == "__main__":
       print("Bye bye now")
       break
 
+    if "Ok, you can stop now" in statement:
+      speak("Signing off")
+      print("Signing off")
+
     elif "Logging off now" in statement or "signing out" in statement:
       speak("Okay, terminating machine now")
       subprocess.call(["Shutdown"])
