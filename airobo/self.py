@@ -22,7 +22,8 @@ while True:
 print("Hello, user!")
 newVoiceRate = 170
 
-engine = pyttsx3.init("nsss")
+# engine = pyttsx3.init("nsss") --> trying to figure out to make this work
+engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
 
