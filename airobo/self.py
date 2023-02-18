@@ -27,16 +27,6 @@ engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
 
-"""
-# new
-class NSSpeechDriver(NSObject):
-  def initWithProxy(self, proxy):
-    self = super(NSSpeechDriver, self).init()
-    if self:
-      self.tts = NSSpeechSynthesizer.alloc().initWithVoice_(None)
-    return self
-"""
-
 def speak(text):
   engine.say(text)
   engine.runAndWait()
