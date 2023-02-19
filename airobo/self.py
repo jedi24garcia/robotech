@@ -62,7 +62,6 @@ def TakeCommands():
 speak("Ready for your command ser")
 wishGreetings()
 
-
 if __name__ == "__main__":
 
   while True:
