@@ -55,7 +55,7 @@ def TakeCommands():
        print(f"user said:{statement}\n")
 
     except Exception as e:
-       speak("Sorry, but can you please repeat that again?")
+       speak("I beg your pardon?")
        return "None"
     return statement
 
