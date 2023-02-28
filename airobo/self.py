@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 
 import speech_recognition as sr  # version 3.9.0
-import pyttsx3
+# import pyttsx3
 import wikipedia
 import datetime
 import pyaudio
-import pyttsx3
 import time 
 import sys
 from AppKit import NSSpeechSynthesizer
