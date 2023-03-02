@@ -78,6 +78,11 @@ if __name__ == "__main__":
     if "Ok, you can stop now" in statement:
       speak("Signing off")
       print("Signing off")
+    
+    elif "search" in statement:
+      statement = statement.replace("search, """)
+      webbrowser.open_new_tab(statement)
+      time.sleep(4)
 
     elif "Logging off now" in statement or "signing out" in statement:
       speak("Okay, terminating machine now")
