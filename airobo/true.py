@@ -5,11 +5,12 @@
 import numpy
 from scipy import misc 
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import imread
 
-img = misc.face()
-type(img)
+A = imread('Tiger.jpg');
+type(A)
 
 numpy.ndarray
 
-plt.imshow(img)
+plt.imshow(A)
 plt.show()
