@@ -55,6 +55,7 @@ def TakeCommands():
 
     except Exception as e:
        speak("I beg your pardon?")
+       print("I beg your pardon?")
        return "None"
     return statement
 
