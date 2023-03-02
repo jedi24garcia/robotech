@@ -7,10 +7,10 @@ from scipy import misc
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import imread
 
-A = imread('Tiger.jpg');
-type(A)
+img = imread('Tiger.jpg');
+type(img)
 
 numpy.ndarray
 
-plt.imshow(A)
+plt.imshow(img)
 plt.show()
