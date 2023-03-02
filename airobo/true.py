@@ -2,8 +2,14 @@
 
 """ We are learning NumPy """ 
 
-import numpy as np
+import numpy
 from scipy import misc 
+import matplotlib.pyplot as plt
 
+img = misc.face()
+type(img)
 
-print("hello")
+numpy.ndarray
+
+plt.imshow(img)
+plt.show()
