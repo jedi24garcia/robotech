@@ -31,17 +31,6 @@ engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
 
-"""
-class NSSpeechSynthesizer:
-  def __init__(self):
-    if not os.path.isdir(TTS_DIR+"/nsss"):
-      os.mkdir(TTS_DIR+"/nsss")
-      logging.debug(f"created TTS_DIR/nsss at {TTS_DIR}/nsss")
-    self.nssp = NSSpeechSynthesizer
-    self.ve = self.nssp.alloc().init()
-    self.ve.setRate_(100)
-    logging.debug(f"set nsss rate to {self.ve.rate()}")
-"""
 # ss = AppKit.NSSpeechSynthesizer.alloc().init()
 # sp = NSSpeechSynthesizer.alloc().initWithVoice_(None) # use default voice
 # sp.startSpeakingString_("hello world")
