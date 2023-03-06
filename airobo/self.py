@@ -7,8 +7,12 @@ import datetime
 import pyaudio
 import time 
 import sys
-from AppKit import NSSpeechSynthesizer
+# from AppKit import NSSpeechSynthesizer - Does not really run
+import AppKit
 
+# Commented for now until NSSpeechSynthesizer is fixed
+
+"""
 password = "admiral"
 
 while True:
@@ -17,6 +21,7 @@ while True:
     break
   else:
     print("Wrong! Please try again!")
+"""
 
 print("Hello, user!")
 newVoiceRate = 170
@@ -25,6 +30,10 @@ newVoiceRate = 170
 engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
+
+# class NSSpeechSynthesizer : NSObject
+
+ss = AppKit.NSSpeechSynthesizer.alloc().init()
 
 def speak(text):
   engine.say(text)
