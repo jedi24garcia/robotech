@@ -9,9 +9,9 @@ import time
 import sys
 # from AppKit import NSSpeechSynthesizer - Does not really run
 import AppKit
+from Cocoa import NSSpeechSynthesizer
 
 # Commented for now until NSSpeechSynthesizer is fixed
-
 """
 password = "admiral"
 
@@ -31,9 +31,20 @@ engine = pyttsx3.init()
 engine.setProperty("voice", "voices[1].id")
 engine.setProperty("rate", newVoiceRate)
 
-# class NSSpeechSynthesizer : NSObject
-
-ss = AppKit.NSSpeechSynthesizer.alloc().init()
+"""
+class NSSpeechSynthesizer:
+  def __init__(self):
+    if not os.path.isdir(TTS_DIR+"/nsss"):
+      os.mkdir(TTS_DIR+"/nsss")
+      logging.debug(f"created TTS_DIR/nsss at {TTS_DIR}/nsss")
+    self.nssp = NSSpeechSynthesizer
+    self.ve = self.nssp.alloc().init()
+    self.ve.setRate_(100)
+    logging.debug(f"set nsss rate to {self.ve.rate()}")
+"""
+# ss = AppKit.NSSpeechSynthesizer.alloc().init()
+# sp = NSSpeechSynthesizer.alloc().initWithVoice_(None) # use default voice
+# sp.startSpeakingString_("hello world")
 
 def speak(text):
   engine.say(text)
@@ -69,6 +80,8 @@ def TakeCommands():
     return statement
 
 speak("Ready for your command ser")
+# sp = NSSpeechSynthesizer.alloc().initWithVoice_(None)
+# sp.startSpeakingString_("Ready for you command ser")
 wishGreetings()
 
 if __name__ == "__main__":
