@@ -51,6 +51,7 @@ class NoIdeaSpeak():
     self.engine.say(text)
     self.engine.runAndWait()
 """
+class NSSpeechSynthesizer : NSObject
 
 def speak(text):
   engine.say(text)
