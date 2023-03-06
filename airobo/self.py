@@ -27,28 +27,34 @@ print("Hello, user!")
 newVoiceRate = 170
 
 # engine = pyttsx3.init("nsss") --> trying to figure out to make this work
+"""
 class NSSpeechSynthesizer():
   def __init__(self, engine):
     self.engine
     self.engine = pyttsx3.init()
     self.engine.setProperty("voice", "voices[1].id")
     self.engine.setProperty("rate", newVoiceRate)
+"""
+
+engine = pyttsx3.init()
+engine.setProperty("voice", "voice[1].id")
+engine.setProperty("rate", newVoiceRate)
 
 # ss = AppKit.NSSpeechSynthesizer.alloc().init()
 # sp = NSSpeechSynthesizer.alloc().initWithVoice_(None) # use default voice
 # sp.startSpeakingString_("hello world")
 
+"""
 class NoIdeaSpeak():
-  def __init__(self, speak(text), engine):
+  def __init__(self, engine):
     self.engine
     self.engine.say(text)
     self.engine.runAndWait()
-
 """
-def speak(text)
+
+def speak(text):
   engine.say(text)
   engine.runAndWait()
-"""
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
