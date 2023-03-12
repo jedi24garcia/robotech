@@ -50,8 +50,9 @@ class NoIdeaSpeak():
     self.engine
     self.engine.say(text)
     self.engine.runAndWait()
+class NSSpeechSynthesizer : NSObject
+  def speechSynthesizer_didFinishSpeaking_(self, tts, success):
 """
-# class NSSpeechSynthesizer : NSObject
 
 def speak(text):
   engine.say(text)
