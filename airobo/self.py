@@ -6,7 +6,7 @@ import speech_recognition as sr  # version 3.9.0
 import pyttsx3
 import wikipedia
 import datetime
-import pyaudio
+# import pyaudio
 import time 
 import sys
 # from AppKit import NSSpeechSynthesizer - Does not really run
