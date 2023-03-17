@@ -8,8 +8,8 @@ import pyaudio
 import time 
 import sys
 # from AppKit import NSSpeechSynthesizer - Does not really run
-import AppKit
-from Cocoa import NSSpeechSynthesizer
+# import AppKit
+# from Cocoa import NSSpeechSynthesizer
 
 # Commented for now until NSSpeechSynthesizer is fixed
 """
