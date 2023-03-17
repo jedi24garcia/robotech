@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-" We will be running this program through Windows"
+" We will be running this program through Windows "
 
 import speech_recognition as sr  # version 3.9.0
 import pyttsx3
