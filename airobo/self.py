@@ -9,12 +9,7 @@ import datetime
 import pyaudio
 import time 
 import sys
-# from AppKit import NSSpeechSynthesizer - Does not really run
-# import AppKit
-# from Cocoa import NSSpeechSynthesizer
 
-# Commented for now until NSSpeechSynthesizer is fixed
-"""
 password = "admiral"
 
 while True:
@@ -23,38 +18,13 @@ while True:
     break
   else:
     print("Wrong! Please try again!")
-"""
 
 print("Hello, user!")
 newVoiceRate = 170
 
-# engine = pyttsx3.init("nsss") --> trying to figure out to make this work
-"""
-class NSSpeechSynthesizer():
-  def __init__(self, engine):
-    self.engine
-    self.engine = pyttsx3.init()
-    self.engine.setProperty("voice", "voices[1].id")
-    self.engine.setProperty("rate", newVoiceRate)
-"""
-
 engine = pyttsx3.init()
 engine.setProperty("voice", "voice[1].id")
 engine.setProperty("rate", newVoiceRate)
-
-# ss = AppKit.NSSpeechSynthesizer.alloc().init()
-# sp = NSSpeechSynthesizer.alloc().initWithVoice_(None) # use default voice
-# sp.startSpeakingString_("hello world")
-
-"""
-class NoIdeaSpeak():
-  def __init__(self, engine):
-    self.engine
-    self.engine.say(text)
-    self.engine.runAndWait()
-class NSSpeechSynthesizer : NSObject
-  def speechSynthesizer_didFinishSpeaking_(self, tts, success):
-"""
 
 def speak(text):
   engine.say(text)
@@ -90,8 +60,6 @@ def TakeCommands():
     return statement
 
 speak("Ready for your command ser")
-# sp = NSSpeechSynthesizer.alloc().initWithVoice_(None)
-# sp.startSpeakingString_("Ready for you command ser")
 wishGreetings()
 
 if __name__ == "__main__":
