@@ -74,8 +74,8 @@ if __name__ == "__main__":
       continue
     
     if "Ok bye" in statement or "stop" in statement:
-      speak("Bye bye now")
-      print("Bye bye now")
+      speak("Goodbye now")
+      print("Goodbye now")
       break
 
     if "Ok, you can stop now" in statement:
@@ -83,7 +83,7 @@ if __name__ == "__main__":
       print("Signing off")
     
     elif "search" in statement:
-      statement = statement.replace("search, """)
+      statement = statement.replace("search", "")
       webbrowser.open_new_tab(statement)
       time.sleep(4)
 
