@@ -10,6 +10,7 @@ import pyaudio
 import time 
 import sys
 import subprocess
+import webbrowser
 
 password = "admiral"
 
