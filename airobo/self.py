@@ -2,7 +2,7 @@
 
 " We will be running this program through Windows "
 
-import speech_recognition as sr  # version 3.9.0
+import speech_recognition as sr  # version updated to 3.10.0
 import pyttsx3
 import wikipedia
 import datetime
@@ -84,6 +84,7 @@ if __name__ == "__main__":
     
     elif "search" in statement:
       statement = statement.replace("search", "")
+      # url = "https://www.google.com/"
       webbrowser.open_new_tab(statement)
       time.sleep(4)
 
