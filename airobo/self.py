@@ -48,6 +48,7 @@ def wishGreetings():
     print("Good Evening")
 
 def TakeCommands():
+  path = "C:/Program Files (8x6)/Google/Chrome/Application/chrome.exe %s"
   r = sr.Recognizer()
   with sr.Microphone() as source:
     print("Listening...")
@@ -55,7 +56,8 @@ def TakeCommands():
   
     try:
        statement = r.recognize_google(audio,language='en-in')
-       print(f"user said:{statement}\n")
+       # print(f"user said:{statement}\n") -- Might delete this line later --- 
+       print(f"user said: {statement}\n")
 
     except Exception as e:
        speak("I beg your pardon?")
