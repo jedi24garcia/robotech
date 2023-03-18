@@ -84,8 +84,13 @@ if __name__ == "__main__":
     
     elif "search" in statement:
       statement = statement.replace("search", "")
-      # url = "https://www.google.com/"
+      # webbrowser.get('windows-default').open("https://www.google.com/")
       webbrowser.open_new_tab(statement)
+      time.sleep(4)
+
+    elif "open" in statement:
+      statement = statement.replace("open", "")
+      webbrowser.open_new_tab("https://www.twitch.tv/directory")
       time.sleep(4)
 
     elif "Logging off now" in statement or "signing out" in statement:
