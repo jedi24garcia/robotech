@@ -92,10 +92,14 @@ if __name__ == "__main__":
       webbrowser.open_new_tab(statement)
       time.sleep(4)
 
+# At this point, different sites will be added  
+
     elif "open" in statement:
       statement = statement.replace("open", "")
       webbrowser.open_new_tab("https://www.twitch.tv/directory")
       time.sleep(4)
+
+# End!
 
     elif "Logging off now" in statement or "signing out" in statement:
       speak("Okay, terminating machine now")
