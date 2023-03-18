@@ -85,6 +85,7 @@ if __name__ == "__main__":
     if "Ok, you can stop now" in statement:
       speak("Signing off")
       print("Signing off")
+      break
     
     elif "search" in statement:
       statement = statement.replace("search", "")
