@@ -12,6 +12,7 @@ import sys
 import subprocess
 import webbrowser
 
+"""
 password = "admiral"
 
 while True:
@@ -20,8 +21,9 @@ while True:
     break
   else:
     print("Wrong! Please try again!")
-
-print("Hello, user!")
+"""
+   
+print("Hello there user, I will be your assistant for today.")
 newVoiceRate = 170
 
 engine = pyttsx3.init()
@@ -61,7 +63,7 @@ def TakeCommands():
        return "None"
     return statement
 
-speak("Ready for your command ser")
+speak("Hello there user, I will be your assistant for today.")
 wishGreetings()
 
 if __name__ == "__main__":
