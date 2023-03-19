@@ -96,6 +96,8 @@ if __name__ == "__main__":
 
 # At this point, different sites will be added  
 
+# We're going to add if statement here soon
+
     elif "open" in statement:
       statement = statement.replace("open twitch", "")
       webbrowser.open_new_tab("https://www.twitch.tv/directory")
