@@ -38,14 +38,14 @@ def speak(text):
 def wishGreetings():
   hour=datetime.datetime.now().hour    
   if hour>=0 and hour<12:
-    speak("Good Morning")
-    print("Good Morning")
+    speak("Good Morning!")
+    print("Good Morning!")
   elif hour>=12 and hour<18:
-    speak("Good Afternoon")
-    print("Good Afternoon")
+    speak("Good Afternoon!")
+    print("Good Afternoon!")
   else:
-    speak("Good Evening") 
-    print("Good Evening")
+    speak("Good Evening!") 
+    print("Good Evening!")
 
 def TakeCommands():
   path = "C:/Program Files (8x6)/Google/Chrome/Application/chrome.exe %s"
