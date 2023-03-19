@@ -23,7 +23,7 @@ while True:
     print("Wrong! Please try again!")
 """
    
-print("Hello there user, I will be your assistant for today.")
+# print("Hello there user, I will be your assistant for today.") -- will remove line at some point --
 newVoiceRate = 170
 
 engine = pyttsx3.init()
@@ -56,7 +56,7 @@ def TakeCommands():
   
     try:
        statement = r.recognize_google(audio,language='en-in')
-       # print(f"user said:{statement}\n") -- Might delete this line later --- 
+       # print(f"user said:{statement}\n") -- will remove line at some point -- 
        print(f"user said: {statement}\n")
 
     except Exception as e:
@@ -64,7 +64,8 @@ def TakeCommands():
        print("I beg your pardon?")
        return "None"
     return statement
-
+  
+print("Hello there user, I will be your assistant for today.")
 speak("Hello there user, I will be your assistant for today.")
 wishGreetings()
 
