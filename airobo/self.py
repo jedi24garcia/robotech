@@ -110,7 +110,12 @@ if __name__ == "__main__":
 
     elif "open" in statement:
       statement = statement.replace("open linkedin", "")
-      statement.open_new_tab("https://www.linkedin.com/home")
+      statement.open_new_tab("https://www.linkedin.com/home/")
+      time.sleep(3)
+
+    elif "open" in statement:
+      statement = statement.replace("open gmail", "")
+      statement.open_new_tab("https://accounts.google.com/")
       time.sleep(3)
 
 # End!
