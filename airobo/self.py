@@ -87,7 +87,7 @@ if __name__ == "__main__":
       speak("Signing off")
       print("Signing off")
       break
-    
+
     elif "search" in statement:
       statement = statement.replace("search", "")
       # webbrowser.get('windows-default').open("https://www.google.com/")
@@ -97,9 +97,19 @@ if __name__ == "__main__":
 # At this point, different sites will be added  
 
     elif "open" in statement:
-      statement = statement.replace("open", "")
+      statement = statement.replace("open twitch", "")
       webbrowser.open_new_tab("https://www.twitch.tv/directory")
-      time.sleep(4)
+      time.sleep(3)
+
+    elif "open" in statement:
+      statement = statement.replace("open youtube", "")
+      statement.open_new_tab("https://www.youtube.com/")
+      time.sleep(3)
+
+    elif "open" in statement:
+      statement = statement.replace("open linkedin", "")
+      statement.open_new_tab("https://www.linkedin.com/home")
+      time.sleep(3)
 
 # End!
 
