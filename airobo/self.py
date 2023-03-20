@@ -48,9 +48,10 @@ def wishGreetings():
     print("Good Evening!")
 
 def TakeCommands():
-  path = "C:/Program Files (8x6)/Google/Chrome/Application/chrome.exe %s"
+  path = "C:/Program Files (8x6)/Google\Chrome/Application/chrome.exe %s"
   r = sr.Recognizer()
   with sr.Microphone() as source:
+    r.adjust_for_ambient_noise(source, duration=0.5) # method reads the first second of the file stream and calibrates the recognizer to the noise level of the audio
     print("Listening...")
     audio = r.listen(source)
   
@@ -92,6 +93,7 @@ if __name__ == "__main__":
       statement = statement.replace("search", "")
       # webbrowser.get('windows-default').open("https://www.google.com/")
       webbrowser.open_new_tab(statement)
+      # webbrowser.open("https://www.google.com/")
       time.sleep(4)
 
 # At this point, different sites will be added  
