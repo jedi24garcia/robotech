@@ -1,2 +1,2 @@
 # robotech
-Honestly, just a dumb A.I-like :)  
+Honestly, just a dumb personal assistant :)  
