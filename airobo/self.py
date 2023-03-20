@@ -99,7 +99,7 @@ if __name__ == "__main__":
 # We're going to add if statement here soon
 
     elif "open twitch" in statement:
-      webbrowser.open_new_tab("https://www.twitch.tv/directory")
+      webbrowser.open_new_tab("https://www.twitch.tv/")
       time.sleep(3)
 
     elif "open youtube" in statement:
@@ -107,11 +107,11 @@ if __name__ == "__main__":
       time.sleep(3)
 
     elif "open linkedin" in statement:
-      webbrowser.open_new_tab("https://www.linkedin.com/home/")
+      webbrowser.open_new_tab("https://www.linkedin.com/")
       time.sleep(3)
 
-    elif "open gmail" in statement:
-      webbrowser.open_new_tab("https://accounts.google.com/")
+    elif "open google" in statement:
+      webbrowser.open_new_tab("https://www.google.com/")
       time.sleep(3)
 
 # End!
