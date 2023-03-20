@@ -91,9 +91,7 @@ if __name__ == "__main__":
 
     elif "search" in statement:
       statement = statement.replace("search", "")
-      # webbrowser.get('windows-default').open("https://www.google.com/")
       webbrowser.open_new_tab(statement)
-      # webbrowser.open("https://www.google.com/")
       time.sleep(3)
 
 # At this point, different sites will be added  
