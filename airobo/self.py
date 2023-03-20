@@ -98,23 +98,19 @@ if __name__ == "__main__":
 
 # We're going to add if statement here soon
 
-    elif "open" in statement:
-      statement = statement.replace("open twitch", "")
+    elif "open twitch" in statement:
       webbrowser.open_new_tab("https://www.twitch.tv/directory")
       time.sleep(3)
 
-    elif "open" in statement:
-      statement = statement.replace("open youtube", "")
+    elif "open youtube" in statement:
       webbrowser.open_new_tab("https://www.youtube.com/")
       time.sleep(3)
 
-    elif "open" in statement:
-      statement = statement.replace("open linkedin", "")
+    elif "open linkedin" in statement:
       webbrowser.open_new_tab("https://www.linkedin.com/home/")
       time.sleep(3)
 
-    elif "open" in statement:
-      statement = statement.replace("open gmail", "")
+    elif "open gmail" in statement:
       webbrowser.open_new_tab("https://accounts.google.com/")
       time.sleep(3)
 
