@@ -11,6 +11,8 @@ import time
 import sys
 import subprocess
 import webbrowser
+# from pocketsphinx import LiveSpeech -- python 3.11 is completely unsupported.
+# Meaning you will have to downgrade to 3.10 to use this module --
 
 """
 password = "admiral"
@@ -56,14 +58,14 @@ def TakeCommands():
     audio = r.listen(source)
   
     try:
-       statement = r.recognize_google(audio,language='en-in')
-       # print(f"user said:{statement}\n") -- will remove line at some point -- 
-       print(f"user said: {statement}\n")
+      statement = r.recognize_google(audio,language='en-in')
+       # for phrase in LiveSpeech(): -- will add once Python 3.11 supports this module
+      print(f"user said: {statement}\n")
 
     except Exception as e:
-       speak("I beg your pardon?")
-       print("I beg your pardon?")
-       return "None"
+      speak("I beg your pardon?")
+      print("I beg your pardon?")
+      return "None"
     return statement
   
 print("Hello there user, I will be your assistant for today.")
