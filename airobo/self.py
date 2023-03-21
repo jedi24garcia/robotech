@@ -28,8 +28,10 @@ while True:
 # print("Hello there user, I will be your assistant for today.") -- will remove line at some point --
 newVoiceRate = 170
 
+# engine = pyttsx3.init("sapi5")
+# voices = engine.getProperty("voices")
 engine = pyttsx3.init()
-engine.setProperty("voice", "voice[1].id")
+engine.setProperty("voice", "voice[0].id")
 engine.setProperty("rate", newVoiceRate)
 
 def speak(text):
@@ -79,18 +81,18 @@ if __name__ == "__main__":
     print("How can I help?")
     statement = TakeCommands().lower()
     if statement == 0:
-      continue
+      continue  
     
     if "Ok bye" in statement or "stop" in statement:
       speak("Goodbye now")
       print("Goodbye now")
       break
-
-    if "Ok, you can stop now" in statement:
+     
+    if "Terminate" in statement:
       speak("Signing off")
       print("Signing off")
-      break
-
+      break 
+          
     elif "search" in statement:
       statement = statement.replace("search", "")
       webbrowser.open_new_tab(statement)
