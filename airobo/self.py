@@ -102,22 +102,26 @@ if __name__ == "__main__":
 
     elif "open twitch" in statement:
       webbrowser.open_new_tab("https://www.twitch.tv/")
-      speak("Now opening twitch")
+      speak("Here you go, twitch is now open.")
+      print("Here you go, twitch is now open.")
       time.sleep(3)
 
     elif "open youtube" in statement:
       webbrowser.open_new_tab("https://www.youtube.com/")
-      speak("Now opening youtube")
+      speak("Sweet as, here is youtube.")
+      print("Sweet as, here is youtube.")
       time.sleep(3)
 
     elif "open linkedin" in statement:
       webbrowser.open_new_tab("https://www.linkedin.com/")
-      speak("Now opening linkedin")
+      speak("Really, this? Well, here you go then.")
+      print("Really, this? Well, here you go then.")
       time.sleep(3)
 
     elif "open google" in statement:
       webbrowser.open_new_tab("https://www.google.com/")
-      speak("Now opening google")
+      speak("Now opening google.")
+      print("Now opening google.")
       time.sleep(3)
 
 # End!
