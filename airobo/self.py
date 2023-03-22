@@ -24,8 +24,7 @@ while True:
   else:
     print("Wrong! Please try again!")
 """
-   
-# print("Hello there user, I will be your assistant for today.") -- will remove line at some point --
+
 newVoiceRate = 170
 
 # engine = pyttsx3.init("sapi5")
