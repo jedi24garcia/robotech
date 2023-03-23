@@ -27,7 +27,6 @@ while True:
 
 newVoiceRate = 170
 
-# engine = pyttsx3.init("sapi5")
 # voices = engine.getProperty("voices")
 engine = pyttsx3.init()
 engine.setProperty("voice", "voice[0].id")
