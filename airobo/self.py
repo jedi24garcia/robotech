@@ -11,19 +11,10 @@ import time
 import sys
 import subprocess
 import webbrowser
+import tkinter as tk
+
 # from pocketsphinx import LiveSpeech -- python 3.11 is completely unsupported.
 # Meaning you will have to downgrade to 3.10 to use this module --
-
-"""
-password = "admiral"
-
-while True:
-  user_input = input("Please enter password: ")
-  if user_input == password:
-    break
-  else:
-    print("Wrong! Please try again!")
-"""
 
 newVoiceRate = 170
 
