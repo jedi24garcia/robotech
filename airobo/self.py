@@ -23,6 +23,12 @@ engine = pyttsx3.init()
 engine.setProperty("voice", "voice[0].id")
 engine.setProperty("rate", newVoiceRate)
 
+window = tk.Tk()
+
+window.title("Kobe")
+window.geometry("900x600+100+100")
+window.configure(bg="black")
+
 def speak(text):
   engine.say(text)
   engine.runAndWait()
@@ -62,6 +68,7 @@ def TakeCommands():
 print("Hello there user, I will be your assistant for today.")
 speak("Hello there user, I will be your assistant for today.")
 wishGreetings()
+window.mainloop()
 
 if __name__ == "__main__":
 
