@@ -17,14 +17,6 @@ from tkinter import *
 # from pocketsphinx import LiveSpeech -- python 3.11 is completely unsupported.
 # Meaning you will have to downgrade to 3.10 to use this module --
 
-# window = tk.Tk()
-
-# window.title("Kobe")
-# window.geometry("900x600+100+100")
-# window.configure(bg="darkblue")
-
-# Label(window, text="This is Kobe", font=("Helvitica, 40 bold"), fg="Blue").pack(pady=20)
-
 newVoiceRate = 170
 
 # voices = engine.getProperty("voices")
@@ -72,7 +64,6 @@ def TakeCommands():
 print("Hello there user, I will be your assistant for today.")
 speak("Hello there user, I will be your assistant for today.")
 wishGreetings()
-# window.mainloop()
 
 if __name__ == "__main__":
 
