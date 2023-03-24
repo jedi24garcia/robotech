@@ -89,6 +89,12 @@ if __name__ == "__main__":
 
 # We're going to add if statement here soon
 
+    elif "open facebook" in statement:
+      webbrowser.open_new_tab("https://www.facebook.com/")
+      speak("Facebook is now open ser")
+      print("Facebook is now open ser")
+      time.sleep(3)
+
     elif "open twitch" in statement:
       webbrowser.open_new_tab("https://www.twitch.tv/")
       speak("Here you go, twitch is now open.")
