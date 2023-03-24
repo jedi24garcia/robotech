@@ -5,6 +5,9 @@ from tkinter import *
 
 window = tk.Tk()
 
-window.title('Kobe')
+window.title("Kobe")
+window.geometry("500x400")
+
+
 
 window.mainloop()
