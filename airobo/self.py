@@ -11,15 +11,11 @@ import time
 import sys
 import subprocess
 import webbrowser
-import tkinter as tk
-from tkinter import *
-
 # from pocketsphinx import LiveSpeech -- python 3.11 is completely unsupported.
 # Meaning you will have to downgrade to 3.10 to use this module --
 
 newVoiceRate = 170
 
-# voices = engine.getProperty("voices")
 engine = pyttsx3.init()
 engine.setProperty("voice", "voice[0].id")
 engine.setProperty("rate", newVoiceRate)
