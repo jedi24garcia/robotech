@@ -86,8 +86,8 @@ if __name__ == "__main__":
       time.sleep(3)
 
 # At this point, different sites will be added  
-
 # We're going to add if statement here soon
+
     elif "open facebook" in statement:
       webbrowser.open_new_tab("https://www.facebook.com/")
       speak("Facebook is now open ser")
