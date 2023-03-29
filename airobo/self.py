@@ -88,7 +88,6 @@ if __name__ == "__main__":
 # At this point, different sites will be added  
 
 # We're going to add if statement here soon
-
     elif "open facebook" in statement:
       webbrowser.open_new_tab("https://www.facebook.com/")
       speak("Facebook is now open ser")
@@ -117,6 +116,12 @@ if __name__ == "__main__":
       webbrowser.open_new_tab("https://www.google.com/")
       speak("Now opening google.")
       print("Now opening google.")
+      time.sleep(3)
+
+    elif "open netflix" in statement:
+      webbrowser.open_new_tab("https://www.netflix.com/nz/")
+      speak("Right away ser")
+      print("Right away ser")
       time.sleep(3)
 
 # End!
