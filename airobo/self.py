@@ -124,6 +124,12 @@ if __name__ == "__main__":
       print("Right away ser")
       time.sleep(3)
 
+    elif "open disneyplus" in statement:
+      webbrowser.open_new_tab("https://www.disneyplus.com/en-nz/")
+      speak("You got it")
+      print("You got it")
+      time.sleep(3)
+
 # End!
 
     elif "Logging off now" in statement or "signing out" in statement:
