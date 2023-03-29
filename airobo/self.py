@@ -88,6 +88,10 @@ if __name__ == "__main__":
 # At this point, different sites will be added  
 # We're going to add if statement here soon
 
+    elif "Tell us what you can do" in statement:
+      speak("I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
+      time.sleep(3)
+
     elif "open facebook" in statement:
       webbrowser.open_new_tab("https://www.facebook.com/")
       speak("Facebook is now open ser")
