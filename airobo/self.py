@@ -134,6 +134,12 @@ if __name__ == "__main__":
       print("You got it")
       time.sleep(3)
 
+    elif "open prime" in statement:
+      webbrowser.open_new_tab("https://www.primevideo.com/")
+      speak("Prime is now open")
+      print("Prime is now open")
+      time.sleep(3)
+
 # End!
 
     elif "Logging off now" in statement or "signing out" in statement:
