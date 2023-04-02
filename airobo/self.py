@@ -104,6 +104,12 @@ if __name__ == "__main__":
       print("Here you go, twitch is now open.")
       time.sleep(3)
 
+    elif "open github" in statement:
+      webbrowser.open_new_tab("https://github.com/")
+      speak("Now open")
+      print("Now open")
+      time.sleep(3)
+      
     elif "open youtube" in statement:
       webbrowser.open_new_tab("https://www.youtube.com/")
       speak("Sweet as, here is youtube.")
@@ -139,8 +145,8 @@ if __name__ == "__main__":
       speak("Prime is now open")
       print("Prime is now open")
       time.sleep(3)
-
-# End!
+    
+    # End!
 
     elif "Logging off now" in statement or "signing out" in statement:
       speak("Okay, terminating machine now")
