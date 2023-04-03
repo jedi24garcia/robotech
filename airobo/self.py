@@ -95,8 +95,8 @@ if __name__ == "__main__":
 
     elif "open facebook" in statement:
       webbrowser.open_new_tab("https://www.facebook.com/")
-      speak("Facebook is now open ser")
-      print("Facebook is now open ser")
+      speak("Facebook is now open sir")
+      print("Facebook is now open sir")
       time.sleep(3)
 
     elif "open twitch" in statement:
@@ -131,8 +131,8 @@ if __name__ == "__main__":
 
     elif "open netflix" in statement:
       webbrowser.open_new_tab("https://www.netflix.com/nz/")
-      speak("Right away ser")
-      print("Right away ser")
+      speak("Right away sir")
+      print("Right away sir")
       time.sleep(3)
 
     elif "open disneyplus" in statement:
