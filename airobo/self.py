@@ -90,6 +90,7 @@ if __name__ == "__main__":
 
     elif "Tell us what you can do" in statement or "Who made you?" in statement:
       speak("I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
+      print("I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
       time.sleep(3)
 
     elif "open facebook" in statement:
