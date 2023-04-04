@@ -90,67 +90,68 @@ if __name__ == "__main__":
 
     elif "Tell us what you can do" in statement or "Who made you?" in statement:
       speak("I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
-      print("I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
+      print(f"I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
       time.sleep(3)
 
     elif "open facebook" in statement:
       webbrowser.open_new_tab("https://www.facebook.com/")
       speak("Facebook is now open sir")
-      print("Facebook is now open sir")
+      print(f"Facebook is now open sir")
       time.sleep(3)
 
     elif "open twitch" in statement:
       webbrowser.open_new_tab("https://www.twitch.tv/")
       speak("Here you go, twitch is now open.")
-      print("Here you go, twitch is now open.")
+      print(f"Here you go, twitch is now open.")
       time.sleep(3)
 
     elif "open github" in statement:
       webbrowser.open_new_tab("https://github.com/")
       speak("Now open")
-      print("Now open")
+      print(f"Now open")
       time.sleep(3)
       
     elif "open youtube" in statement:
       webbrowser.open_new_tab("https://www.youtube.com/")
       speak("Sweet as, here is youtube.")
-      print("Sweet as, here is youtube.")
+      print(f"Sweet as, here is youtube.")
       time.sleep(3)
 
     elif "open linkedin" in statement:
       webbrowser.open_new_tab("https://www.linkedin.com/")
       speak("Really, this? Well, here you go then.")
-      print("Really, this? Well, here you go then.")
+      print(f"Really, this? Well, here you go then.")
       time.sleep(3)
 
     elif "open google" in statement:
       webbrowser.open_new_tab("https://www.google.com/")
       speak("Now opening google.")
-      print("Now opening google.")
+      print(f"Now opening google.")
       time.sleep(3)
 
     elif "open netflix" in statement:
       webbrowser.open_new_tab("https://www.netflix.com/nz/")
       speak("Right away sir")
-      print("Right away sir")
+      print(f"Right away sir")
       time.sleep(3)
 
     elif "open disneyplus" in statement:
       webbrowser.open_new_tab("https://www.disneyplus.com/en-nz/")
       speak("You got it")
-      print("You got it")
+      print(f"You got it")
       time.sleep(3)
 
     elif "open prime" in statement:
       webbrowser.open_new_tab("https://www.primevideo.com/")
       speak("Prime is now open")
-      print("Prime is now open")
+      print(f"Prime is now open")
       time.sleep(3)
     
     # End!
 
     elif "Logging off now" in statement or "signing out" in statement:
       speak("Okay, terminating machine now")
+      print("Okay, terminating machine now")
       subprocess.call(["Shutdown"])
 
 time.sleep(5)
