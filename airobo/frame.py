@@ -10,7 +10,7 @@ window.title("Future City")
 window.geometry("500x400")
 window.configure(bg="black")
 
-img = ImageTk.PhotoImage(Image.open("cool_city.jpg"))
+img = ImageTk.PhotoImage(Image.open("kobe_bryant.jpg"))
 
 label = Label(window, image = img)
 label.pack()
