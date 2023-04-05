@@ -29,13 +29,13 @@ def wishGreetings():
   hour=datetime.datetime.now().hour    
   if hour>=0 and hour<12:
     speak("Good Morning!")
-    print("Good Morning!")
+    print(f"Good Morning!")
   elif hour>=12 and hour<18:
     speak("Good Afternoon!")
-    print("Good Afternoon!")
+    print(f"Good Afternoon!")
   else:
     speak("Good Evening!") 
-    print("Good Evening!")
+    print(f"Good Evening!")
 
 def TakeCommands():
   path = "C:/Program Files (8x6)/Google/Chrome/Application/chrome.exe %s"
@@ -52,32 +52,32 @@ def TakeCommands():
 
     except Exception as e:
       speak("I beg your pardon?")
-      print("I beg your pardon?")
+      print(f"I beg your pardon?")
       return "None"
     return statement
 
-  
-print("Hello there user, I will be your assistant for today.")
-speak("Hello there user, I will be your assistant for today.")
+speak("Hello there user, I will be your assistant for today.")  
+print(f"Hello there user, I will be your assistant for today.")
+# speak("Hello there user, I will be your assistant for today.")
 wishGreetings()
 
 if __name__ == "__main__":
 
   while True:
     speak("How can I help?")
-    print("How can I help?")
+    print(f"How can I help?")
     statement = TakeCommands().lower()
     if statement == 0:
       continue  
     
     if "Ok bye" in statement or "stop" in statement:
       speak("Goodbye now")
-      print("Goodbye now")
+      print(f"Goodbye now")
       break
      
     if "Terminate" in statement:
       speak("Signing off")
-      print("Signing off")
+      print(f"Signing off")
       break 
           
     elif "search" in statement:
