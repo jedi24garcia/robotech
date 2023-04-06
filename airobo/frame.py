@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 
 window = tk.Tk()
 
-window.title("Future City")
+window.title("Black Mamba")
 window.geometry("800x900+100+100")
 window.configure(bg="black")
 
