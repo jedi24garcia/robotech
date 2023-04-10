@@ -58,7 +58,6 @@ def TakeCommands():
 
 speak("Hello there user, I will be your assistant for today.")  
 print(f"Hello there user, I will be your assistant for today.")
-# speak("Hello there user, I will be your assistant for today.")
 wishGreetings()
 
 if __name__ == "__main__":
@@ -70,14 +69,9 @@ if __name__ == "__main__":
     if statement == 0:
       continue  
     
-    if "Ok bye" in statement or "stop" in statement:
+    if "Ok bye" in statement or "terminate" in statement or "stop" in statement:
       speak("Goodbye now")
       print(f"Goodbye now")
-      break
-     
-    if "Terminate" in statement:
-      speak("Signing off")
-      print(f"Signing off")
       break      
    
     elif "search" in statement:
