@@ -3,7 +3,7 @@
 import tkinter as tk
 from tkinter import *
 from PIL import Image, ImageTk
-from self import speak
+# from self import speak
 
 window = tk.Tk()
 
