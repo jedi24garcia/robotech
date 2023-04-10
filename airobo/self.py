@@ -143,9 +143,9 @@ if __name__ == "__main__":
     
     # End!
 
-    elif "Logging off now" in statement or "signing out" in statement:
-      speak("Okay, terminating machine now")
-      print("Okay, terminating machine now")
+    elif "Logging off now" in statement or "Signing out" in statement or "Terminate system" in statement:
+      speak("Very well, terminating machine now")
+      print("Very well, terminating machine now")
       subprocess.call(["Shutdown"])
 
 time.sleep(5)
