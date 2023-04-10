@@ -11,8 +11,6 @@ import time
 import sys
 import subprocess
 import webbrowser
-# from pocketsphinx import LiveSpeech -- python 3.11 is completely unsupported.
-# Meaning you will have to downgrade to 3.10 to use this module --
 
 newVoiceRate = 170
 
@@ -21,6 +19,8 @@ engine = pyttsx3.init('sapi5')
 voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", newVoiceRate)
+
+# will place tkinter here for the UI
 
 def speak(text):
   engine.say(text)
