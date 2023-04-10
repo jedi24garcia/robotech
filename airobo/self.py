@@ -16,8 +16,10 @@ import webbrowser
 
 newVoiceRate = 170
 
-engine = pyttsx3.init()
-engine.setProperty("voice", "voice[0].id")
+# engine = pyttsx3.init()
+engine = pyttsx3.init('sapi5')
+voices = engine.getProperty("voices")
+engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", newVoiceRate)
 
 def speak(text):
