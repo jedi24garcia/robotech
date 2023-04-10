@@ -78,8 +78,8 @@ if __name__ == "__main__":
     if "Terminate" in statement:
       speak("Signing off")
       print(f"Signing off")
-      break 
-          
+      break      
+   
     elif "search" in statement:
       statement = statement.replace("search", "")
       webbrowser.open_new_tab(statement)
@@ -89,8 +89,8 @@ if __name__ == "__main__":
 # We're going to add if statement here soon
 
     elif "Tell us what you can do" in statement or "Who made you?" in statement:
-      speak("I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
-      print(f"I am ser jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
+      speak("I am sir Jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
+      print(f"I am sir Jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
       time.sleep(3)
 
     elif "open facebook" in statement:
