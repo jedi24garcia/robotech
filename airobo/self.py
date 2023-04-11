@@ -11,6 +11,8 @@ import time
 import sys
 import subprocess
 import webbrowser
+import tkinter as tk
+from tkinter import *
 
 newVoiceRate = 170
 
@@ -20,7 +22,8 @@ voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", newVoiceRate)
 
-# will place tkinter here for the UI
+# will place tkinter here for the GUI
+window = tk.Tk()
 
 def speak(text):
   engine.say(text)
