@@ -14,6 +14,8 @@ import webbrowser
 import tkinter as tk
 from tkinter import *
 
+# maybe will create a function here for user to enter password
+
 newVoiceRate = 170
 
 # engine = pyttsx3.init()
