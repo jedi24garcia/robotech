@@ -22,8 +22,8 @@ while True:
   if UserInput == self_password:
     break
   else:
- #      speak("Incorrect passord, please try again")
-        print("Incorrect passord, please try again")
+ #      speak("Incorrect passord, please try again.")
+        print("Incorrect passord, please try again.")
         
 newVoiceRate = 170
 
