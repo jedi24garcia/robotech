@@ -15,7 +15,16 @@ import tkinter as tk
 from tkinter import *
 
 # maybe will create a function here for user to enter password
+self_password = "admiral"
 
+while True:
+  UserInput = input("Please enter password here: ")
+  if UserInput == self_password:
+    break
+  else:
+ #      speak("Incorrect passord, please try again")
+        print("Incorrect passord, please try again")
+        
 newVoiceRate = 170
 
 # engine = pyttsx3.init()
@@ -151,6 +160,8 @@ if __name__ == "__main__":
       speak("Prime is now open")
       print(f"Prime is now open")
       time.sleep(3)
+
+# enter weather here using "8ef61edcf1c576d65d836254e11ea420"
     
     # End!
 
