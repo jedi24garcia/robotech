@@ -14,17 +14,7 @@ import webbrowser
 import tkinter as tk
 from tkinter import *
 
-# maybe will create a function here for user to enter password
 self_password = "admiral"
-
-while True:
-  UserInput = input("Please enter password here: ")
-  if UserInput == self_password:
-    break
-  else:
- #      speak("Incorrect passord, please try again.")
-        print("Incorrect passord, please try again.")
-        
 newVoiceRate = 170
 
 # engine = pyttsx3.init()
@@ -42,6 +32,15 @@ window.configure(bg="black")
 def speak(text):
   engine.say(text)
   engine.runAndWait()
+
+# password
+while True:
+  UserInput = input("Please enter password here: ")
+  if UserInput == self_password:
+    break
+  else:
+      speak("Incorrect passord, please try again.")
+      print("Incorrect passord, please try again.")
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
