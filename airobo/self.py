@@ -14,20 +14,24 @@ import webbrowser
 import tkinter as tk
 from tkinter import *
 
-self_password = "admiral"
+print("Hint: The Admiral of the mighty Claddish Navy.")
+
+self_password = "Kunkka"
 newVoiceRate = 170
 
-# engine = pyttsx3.init()
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", newVoiceRate)
 
+"""
 # will place tkinter here for the GUI
 window = tk.Tk()
 window.title("Ad Astra")
 window.geometry("800x500+50+50")
 window.configure(bg="black")
+window.attributes("-topmost", 1)
+"""
 
 def speak(text):
   engine.say(text)
@@ -35,12 +39,13 @@ def speak(text):
 
 # password
 while True:
+  speak("Please enter password here: ")
   UserInput = input("Please enter password here: ")
   if UserInput == self_password:
     break
   else:
-      speak("Incorrect passord, please try again.")
-      print("Incorrect passord, please try again.")
+      speak("Incorrect password, noob please try again.")
+      print(f"Incorrect password, noob please try again.")
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
