@@ -16,7 +16,7 @@ from tkinter import *
 
 print("Hint: The Admiral of the mighty Claddish Navy.")
 
-self_password = "kunkka"
+self_password = "Kunkka"
 newVoiceRate = 170
 
 engine = pyttsx3.init('sapi5')
@@ -42,6 +42,8 @@ while True:
   speak("Please enter password here: ")
   UserInput = input("Please enter password here: ")
   if UserInput == self_password:
+    speak("Access Granted.")
+    print("Access Granted.")
     break
   else:
       speak("Incorrect password, noob please try again.")
@@ -82,7 +84,7 @@ def TakeCommands():
 speak("Hello there user, I will be your assistant for today.")  
 print(f"Hello there user, I will be your assistant for today.")
 wishGreetings()
-# window.mainloop() -- not working at the moment
+# window.mainloop() # not working at the moment
 
 if __name__ == "__main__":
 
