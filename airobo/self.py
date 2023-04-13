@@ -16,7 +16,7 @@ from tkinter import *
 
 print("Hint: The Admiral of the mighty Claddish Navy.")
 
-self_password = "Kunkka"
+self_password = "kunkka"
 newVoiceRate = 170
 
 engine = pyttsx3.init('sapi5')
@@ -113,8 +113,8 @@ if __name__ == "__main__":
 
     elif "open facebook" in statement:
       webbrowser.open_new_tab("https://www.facebook.com/")
-      speak("Facebook is now open sir")
-      print(f"Facebook is now open sir")
+      speak("Facebook is now open")
+      print(f"Facebook is now open")
       time.sleep(3)
 
     elif "open twitch" in statement:
@@ -149,8 +149,8 @@ if __name__ == "__main__":
 
     elif "open netflix" in statement:
       webbrowser.open_new_tab("https://www.netflix.com/nz/")
-      speak("Right away sir")
-      print(f"Right away sir")
+      speak("Right away")
+      print(f"Right away")
       time.sleep(3)
 
     elif "open disneyplus" in statement:
