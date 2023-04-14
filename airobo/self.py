@@ -167,6 +167,8 @@ if __name__ == "__main__":
       print(f"Prime is now open")
       time.sleep(3)
 
+    # api for weather here
+
 # enter weather here using "8ef61edcf1c576d65d836254e11ea420"
     
     # End!
