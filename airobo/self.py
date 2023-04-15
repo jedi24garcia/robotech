@@ -166,14 +166,7 @@ if __name__ == "__main__":
       speak("Prime is now open")
       print(f"Prime is now open")
       time.sleep(3)
-
-    # api for weather here
-    elif "weather" in statement:
-      api_key="8ef61edcf1c576d65d836254e11ea420"
-      speak("City name?")
-      print(f"City name?")
-    # End!
-
+    
     elif "Logging off now" in statement or "Signing out" in statement or "Terminate system" in statement:
       speak("Very well, terminating machine now")
       print("Very well, terminating machine now")
