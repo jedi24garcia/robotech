@@ -169,8 +169,6 @@ if __name__ == "__main__":
 
     # api for weather here
     # api_key="8ef61edcf1c576d65d836254e11ea420"
-
-# enter weather here using "8ef61edcf1c576d65d836254e11ea420"
     
     # End!
 
