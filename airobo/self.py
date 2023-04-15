@@ -168,8 +168,10 @@ if __name__ == "__main__":
       time.sleep(3)
 
     # api for weather here
-    # api_key="8ef61edcf1c576d65d836254e11ea420"
-    
+    elif "weather" in statement:
+      api_key="8ef61edcf1c576d65d836254e11ea420"
+      speak("City name?")
+      print(f"City name?")
     # End!
 
     elif "Logging off now" in statement or "Signing out" in statement or "Terminate system" in statement:
