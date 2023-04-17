@@ -167,7 +167,7 @@ if __name__ == "__main__":
       print(f"Prime is now open")
       time.sleep(3)
     
-    elif "Logging off now" in statement or "Signing out" in statement or "Terminate system" in statement:
+    elif "Logging off now" in statement or "Signing out" in statement or "Terminate" in statement:
       speak("Very well, terminating machine now")
       print("Very well, terminating machine now")
       subprocess.call(["Shutdown", "/l", "5"])
