@@ -110,8 +110,8 @@ if __name__ == "__main__":
 
     elif "What can you do" in statement or "Who made you?" in statement:
       speak("I am sir Jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
-  #   print(f"I am sir Jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
-  #   time.sleep(3)
+      print(f"I am sir Jedi's personal assistant. As of now, I am terribly weak as I am just starting to learn how to be human.")
+ #    time.sleep(3)
 
     elif "open facebook" in statement:
       webbrowser.open_new_tab("https://www.facebook.com/")
@@ -169,7 +169,7 @@ if __name__ == "__main__":
     
     elif "Logging off now" in statement or "Signing out" in statement or "Terminate" in statement:
       speak("Very well, terminating machine now")
-      print("Very well, terminating machine now")
+      print(f"Very well, terminating machine now")
       subprocess.call(["Shutdown", "/l", "5"])
 
 time.sleep(5)
