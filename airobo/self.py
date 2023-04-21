@@ -72,7 +72,6 @@ def TakeCommands():
   
     try:
       statement = r.recognize_google(audio,language='en-in')
-       # for phrase in LiveSpeech(): -- will add once Python 3.11 supports this module
       print(f"user said: {statement}\n")
 
     except Exception as e:
