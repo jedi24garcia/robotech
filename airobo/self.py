@@ -126,8 +126,8 @@ if __name__ == "__main__":
 
     elif "open github" in statement:
       webbrowser.open_new_tab("https://github.com/")
-      speak("Now open")
-      print(f"Now open")
+      speak("Now open.")
+      print(f"Now open.")
       time.sleep(3)
       
     elif "open youtube" in statement:
@@ -150,25 +150,25 @@ if __name__ == "__main__":
 
     elif "open netflix" in statement:
       webbrowser.open_new_tab("https://www.netflix.com/nz/")
-      speak("Right away")
-      print(f"Right away")
+      speak("Right away.")
+      print(f"Right away.")
       time.sleep(3)
 
     elif "open disneyplus" in statement:
       webbrowser.open_new_tab("https://www.disneyplus.com/en-nz/")
-      speak("You got it")
-      print(f"You got it")
+      speak("You got it.")
+      print(f"You got it.")
       time.sleep(3)
 
     elif "open prime" in statement:
       webbrowser.open_new_tab("https://www.primevideo.com/")
-      speak("Prime is now open")
-      print(f"Prime is now open")
+      speak("Prime is now open.")
+      print(f"Prime is now open.")
       time.sleep(3)
     
     elif "Logging off now" in statement or "Signing out" in statement or "Terminate" in statement:
-      speak("Very well, terminating machine now")
-      print(f"Very well, terminating machine now")
+      speak("Very well, terminating machine now.")
+      print(f"Very well, terminating machine now.")
       subprocess.call(["Shutdown", "/l", "5"])
 
 time.sleep(5)
