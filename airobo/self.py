@@ -46,8 +46,8 @@ while True:
     print("Access Granted.")
     break
   else:
-      speak("Incorrect password, noob please try again.")
-      print(f"Incorrect password, noob please try again.")
+      speak("Incorrect password, please try again.")
+      print(f"Incorrect password, please try again.")
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
