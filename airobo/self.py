@@ -24,15 +24,6 @@ voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", newVoiceRate)
 
-"""
-# will place tkinter here for the GUI
-window = tk.Tk()
-window.title("Ad Astra")
-window.geometry("800x500+50+50")
-window.configure(bg="black")
-window.attributes("-topmost", 1)
-"""
-
 def speak(text):
   engine.say(text)
   engine.runAndWait()
@@ -83,7 +74,6 @@ def TakeCommands():
 speak("Hello there user, I will be your assistant for today.")  
 print(f"Hello there user, I will be your assistant for today.")
 wishGreetings()
-# window.mainloop() # not working at the moment
 
 if __name__ == "__main__":
 
