@@ -168,5 +168,3 @@ if __name__ == "__main__":
       subprocess.call(["Shutdown", "/l", "5"])
 
 time.sleep(5)
-
-#pause development
