@@ -1,2 +1,2 @@
 # robotech
-Honestly, just a dumb personal assistant :)  
+Trying to get into the trend this days :)  
