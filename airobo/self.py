@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-" We will be running this program through Windows "
-
 import speech_recognition as sr  # version updated to 3.10.0
-import pyttsx3
+# import pyttsx3
+from AppKit import NSSpeechSynthesizer
+from Cocoa import NSSpeechSynthesizer
 import wikipedia
 import datetime
 import pyaudio
@@ -18,8 +18,14 @@ print("Hint: The Admiral of the mighty Claddish Navy.")
 
 self_password = "Kunkka"
 newVoiceRate = 170
+sp = NSSpeechSynthesizer.alloc().initWithVoice_(None)
 
-engine = pyttsx3.init('sapi5')
+# nssp = NSSpeechSynthesizer
+
+# engine = pyttsx3.init('sapi5')
+""" 
+engine = nssp.alloc().init()
+voices = engine.getProperty("voices")
 voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", newVoiceRate)
@@ -27,17 +33,23 @@ engine.setProperty("rate", newVoiceRate)
 def speak(text):
   engine.say(text)
   engine.runAndWait()
+"""
+def speak(text):
+  sp.startSpeakingString_(text)
 
 # password
 while True:
-  speak("Please enter password here: ")
+# speak("Please enter password here: ")
+  sp.startSpeakingString_("Please enter password here: ")
   UserInput = input("Please enter password here: ")
   if UserInput == self_password:
-    speak("Access Granted.")
+  # speak("Access Granted.")    
+    sp.startSpeakingString_("Access Granted.")
     print("Access Granted.")
     break
-  else:
-      speak("Incorrect password, please try again.")
+  else: 
+    # speak("Incorrect password, please try again.")
+      sp.startSpeakingString_("Incorrect password, please try again.")
       print(f"Incorrect password, please try again.")
 
 # depending on the time, computer will say greetings below:
@@ -71,7 +83,8 @@ def TakeCommands():
       return "None"
     return statement
 
-speak("Hello there user, I will be your assistant for today.")  
+# speak("Hello there user, I will be your assistant for today.")  
+sp.startSpeakingString_("Hello there user, I will be your assistant for today.")  
 print(f"Hello there user, I will be your assistant for today.")
 wishGreetings()
 
