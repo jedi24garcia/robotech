@@ -20,10 +20,9 @@ self_password = "Kunkka"
 newVoiceRate = 170
 sp = NSSpeechSynthesizer.alloc().initWithVoice_(None)
 
-# nssp = NSSpeechSynthesizer
-
-# engine = pyttsx3.init('sapi5')
-""" 
+"""
+THIS IS FOR WINDOWS
+engine = pyttsx3.init('sapi5') 
 engine = nssp.alloc().init()
 voices = engine.getProperty("voices")
 voices = engine.getProperty("voices")
@@ -34,22 +33,20 @@ def speak(text):
   engine.say(text)
   engine.runAndWait()
 """
+
 def speak(text):
   sp.startSpeakingString_(text)
 
 # password
 while True:
-# speak("Please enter password here: ")
-  sp.startSpeakingString_("Please enter password here: ")
+  speak("Please enter password here: ")
   UserInput = input("Please enter password here: ")
   if UserInput == self_password:
-  # speak("Access Granted.")    
-    sp.startSpeakingString_("Access Granted.")
+    speak("Access Granted.")    
     print("Access Granted.")
     break
   else: 
-    # speak("Incorrect password, please try again.")
-      sp.startSpeakingString_("Incorrect password, please try again.")
+      speak("Incorrect password, please try again.")
       print(f"Incorrect password, please try again.")
 
 # depending on the time, computer will say greetings below:
@@ -83,8 +80,7 @@ def TakeCommands():
       return "None"
     return statement
 
-# speak("Hello there user, I will be your assistant for today.")  
-sp.startSpeakingString_("Hello there user, I will be your assistant for today.")  
+speak("Hello there user, I will be your assistant for today.")  
 print(f"Hello there user, I will be your assistant for today.")
 wishGreetings()
 
