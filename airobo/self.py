@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 import speech_recognition as sr  # version updated to 3.10.0
-# import pyttsx3
-from AppKit import NSSpeechSynthesizer
+# import pyttsx3 - For Windows only
+# from AppKit import NSSpeechSynthesizer
 from Cocoa import NSSpeechSynthesizer
 import wikipedia
 import datetime
