@@ -2,8 +2,8 @@
 
 import speech_recognition as sr  # version updated to 3.10.0
 # import pyttsx3 - For Windows only
-# from AppKit import NSSpeechSynthesizer
-from Cocoa import NSSpeechSynthesizer
+from AppKit import NSSpeechSynthesizer
+from Cocoa import NSSpeechSynthesizer # https://mail.python.org/pipermail/pythonmac-sig/2013-May/023888.html
 import wikipedia
 import datetime
 import pyaudio
@@ -16,14 +16,13 @@ from tkinter import *
 
 print("Hint: The Admiral of the mighty Claddish Navy.")
 
-self_password = "Kunkka"
+self_password = "kunkka"
 newVoiceRate = 170
-sp = NSSpeechSynthesizer.alloc().initWithVoice_(None)
+speechSynthesizer = NSSpeechSynthesizer.alloc().initWithVoice_(None)
 
 """
 THIS IS FOR WINDOWS
 engine = pyttsx3.init('sapi5') 
-engine = nssp.alloc().init()
 voices = engine.getProperty("voices")
 voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
@@ -35,7 +34,8 @@ def speak(text):
 """
 
 def speak(text):
-  sp.startSpeakingString_(text)
+  speechSynthesizer.startSpeakingString_(text)
+# runAndWait() for mac
 
 # password
 while True:
@@ -67,7 +67,8 @@ def TakeCommands():
   r = sr.Recognizer()
   with sr.Microphone() as source:
     r.adjust_for_ambient_noise(source, duration=0.5) # method reads the first second of the file stream and calibrates the recognizer to the noise level of the audio
-    print("Listening...")
+    print("Listening... Say things like:")
+    print("Open facebook")
     audio = r.listen(source)
   
     try:
