@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 import speech_recognition as sr  # version updated to 3.10.0
-# import pyttsx3 - For Windows only
-from AppKit import NSSpeechSynthesizer
-from Cocoa import NSSpeechSynthesizer # https://mail.python.org/pipermail/pythonmac-sig/2013-May/023888.html
+import pyttsx3
+# from AppKit import NSSpeechSynthesizer
+# from Cocoa import NSSpeechSynthesizer # https://mail.python.org/pipermail/pythonmac-sig/2013-May/023888.html
 import wikipedia
 import datetime
 import pyaudio
@@ -18,10 +18,8 @@ print("Hint: The Admiral of the mighty Claddish Navy.")
 
 self_password = "kunkka"
 newVoiceRate = 170
-speechSynthesizer = NSSpeechSynthesizer.alloc().initWithVoice_(None)
+# speechSynthesizer = NSSpeechSynthesizer.alloc().initWithVoice_(None)
 
-"""
-THIS IS FOR WINDOWS
 engine = pyttsx3.init('sapi5') 
 voices = engine.getProperty("voices")
 voices = engine.getProperty("voices")
@@ -31,12 +29,13 @@ engine.setProperty("rate", newVoiceRate)
 def speak(text):
   engine.say(text)
   engine.runAndWait()
-"""
 
+"""
 def speak(text):
   speechSynthesizer.startSpeakingString_(text)
 # runAndWait() for mac
 
+"""
 # password
 while True:
   speak("Please enter password here: ")
