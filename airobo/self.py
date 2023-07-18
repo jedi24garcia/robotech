@@ -20,6 +20,8 @@ self_password = "kunkka"
 newVoiceRate = 170
 # speechSynthesizer = NSSpeechSynthesizer.alloc().initWithVoice_(None)
 
+# class NSSpeechDriver(NSObject):
+
 engine = pyttsx3.init('sapi5') 
 voices = engine.getProperty("voices")
 voices = engine.getProperty("voices")
