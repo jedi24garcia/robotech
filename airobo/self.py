@@ -17,16 +17,15 @@ from tkinter import *
 print("Hint: The Admiral of the mighty Claddish Navy.")
 
 self_password = "kunkka"
-newVoiceRate = 170
-# speechSynthesizer = NSSpeechSynthesizer.alloc().initWithVoice_(None)
-
-# class NSSpeechDriver(NSObject):
-
 engine = pyttsx3.init('sapi5') 
+
 voices = engine.getProperty("voices")
-voices = engine.getProperty("voices")
+rate = engine.getProperty("rate")
+volume = engine.getProperty("volume")
+
 engine.setProperty("voice", voices[1].id)
-engine.setProperty("rate", newVoiceRate)
+engine.setProperty("rate", 125)
+engine.setProperty("volum", 1.0)
 
 def speak(text):
   engine.say(text)
