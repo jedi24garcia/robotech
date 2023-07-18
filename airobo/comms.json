@@ -1,0 +1,17 @@
+{"comms": {
+  "request": {
+            "request1": "Open",
+            "options": [
+              "Facebook",
+              "Twitch",
+              "Github",
+              "Youtube",
+              "Linkedin",
+              "Google",
+              "Netflix",
+              "DisneyPlus",
+              "Prime",
+              "Discord"
+            ]
+            "answer": "statement"
+  }

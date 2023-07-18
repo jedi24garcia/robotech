@@ -9,6 +9,7 @@ import datetime
 import pyaudio
 import time 
 import sys
+import json
 import subprocess
 import webbrowser
 import tkinter as tk
@@ -17,8 +18,10 @@ from tkinter import *
 print("Hint: The Admiral of the mighty Claddish Navy.")
 
 self_password = "kunkka"
+f = open("comms.json")
 engine = pyttsx3.init('sapi5') 
 
+data = json.load(f)
 voices = engine.getProperty("voices")
 rate = engine.getProperty("rate")
 volume = engine.getProperty("volume")
@@ -30,14 +33,8 @@ engine.setProperty("volum", 1.0)
 def speak(text):
   engine.say(text)
   engine.runAndWait()
+  engine.stop()
 
-"""
-def speak(text):
-  speechSynthesizer.startSpeakingString_(text)
-# runAndWait() for mac
-
-"""
-# password
 while True:
   speak("Please enter password here: ")
   UserInput = input("Please enter password here: ")
@@ -48,6 +45,10 @@ while True:
   else: 
       speak("Incorrect password, please try again.")
       print(f"Incorrect password, please try again.")
+
+for i in data["comms"]:
+  print(i)
+
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
@@ -68,7 +69,6 @@ def TakeCommands():
   with sr.Microphone() as source:
     r.adjust_for_ambient_noise(source, duration=0.5) # method reads the first second of the file stream and calibrates the recognizer to the noise level of the audio
     print("Listening... Say things like:")
-    print("Open facebook")
     audio = r.listen(source)
   
     try:
@@ -83,6 +83,7 @@ def TakeCommands():
 
 speak("Hello there user, I will be your assistant for today.")  
 print(f"Hello there user, I will be your assistant for today.")
+f.close()
 wishGreetings()
 
 if __name__ == "__main__":
