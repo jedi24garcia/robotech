@@ -19,7 +19,9 @@ print("Hint: The Admiral of the mighty Claddish Navy.")
 
 self_password = "kunkka"
 f = open("comms.json")
-engine = pyttsx3.init('sapi5') 
+# engine = pyttsx3.init('sapi5') 
+nsss = None
+engine = pyttsx3.init(nsss)
 
 data = json.load(f)
 voices = engine.getProperty("voices")
