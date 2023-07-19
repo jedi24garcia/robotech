@@ -1,17 +1,12 @@
-{"comms": {
-  "request": {
-            "request1": "Open",
-            "options": [
-              "Facebook",
-              "Twitch",
-              "Github",
-              "Youtube",
-              "Linkedin",
-              "Google",
-              "Netflix",
-              "DisneyPlus",
-              "Prime",
-              "Discord"
-            ]
-            "answer": "statement"
-  }
+{
+  "open facebook": "facebook is now open",
+  "open twitch": "here you go, twitch is now open",
+  "open github": "now open",
+  "open youtube": "sweet as, here is youtube",
+  "open linkedin": "really, this? well, here you go then",
+  "open google": "now opening google",
+  "open netflix": "right away",
+  "open disneyplus": "you got it",
+  "open prime": "prime is now open",
+  "open discord": "discord is now open"
+}
