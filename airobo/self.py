@@ -89,6 +89,8 @@ f.close()
 wishGreetings()
 
 if __name__ == "__main__":
+  main()
+  sys.exit(0)
 
   while True:
     speak("How can I help?")
