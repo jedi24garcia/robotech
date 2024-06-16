@@ -2,7 +2,7 @@
 
 import speech_recognition as sr  # version updated to 3.10.0
 import pyttsx3
-# from AppKit import NSSpeechSynthesizer
+from  AppKit import NSSpeechSynthesizer
 # from Cocoa import NSSpeechSynthesizer # https://mail.python.org/pipermail/pythonmac-sig/2013-May/023888.html
 import wikipedia
 import datetime
@@ -16,28 +16,44 @@ import tkinter as tk
 from tkinter import *
 
 # prints into
-print("Hint: The Admiral of the mighty Claddish Navy.")
+# print("Hint: The Admiral of the mighty Claddish Navy.")
 
-self_password = "kunkka"
-f = open("comms.json")
-# engine = pyttsx3.init('sapi5') 
-nsss = None
-engine = pyttsx3.init(nsss)
+# self_password = "kunkka"
+# f = open("comms.json")
+# engine = pyttsx3.init() 
+# nsss = None
+# engine = pyttsx3.init('nsss')
+nssp = NSSpeechSynthesizer
 
-data = json.load(f)
+
+# data = json.load(f)
+"""
 voices = engine.getProperty("voices")
 rate = engine.getProperty("rate")
 volume = engine.getProperty("volume")
+"""
 
+voices = nssp.getProperty("voices")
+rate = nssp.getProperty("rate")
+volume = nssp.getProperty("volume")
+
+"""
 engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", 125)
 engine.setProperty("volum", 1.0)
+"""
+
+
+nssp.getProperty("voice", voices[1].id)
+nssp.getProperty("rate", 125)
+nssp.getProperty("volume", 1.0)
 
 def speak(text):
-  engine.say(text)
-  engine.runAndWait()
-  engine.stop()
+  nssp.say(text)
+  nssp.runAndWait()
+  nssp.stop()
 
+"""
 while True:
   speak("Please enter password here: ")
   UserInput = input("Please enter password here: ")
@@ -51,7 +67,7 @@ while True:
 
 for i in data["comms"]:
   print(i)
-
+"""
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
