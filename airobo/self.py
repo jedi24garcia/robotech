@@ -15,7 +15,6 @@ import webbrowser
 import tkinter as tk
 from tkinter import *
 
-# prints into
 # print("Hint: The Admiral of the mighty Claddish Navy.")
 
 # self_password = "kunkka"
