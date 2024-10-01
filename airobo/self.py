@@ -2,71 +2,23 @@
 
 import speech_recognition as sr  # version updated to 3.10.0
 import pyttsx3
-from  AppKit import NSSpeechSynthesizer
-# from Cocoa import NSSpeechSynthesizer # https://mail.python.org/pipermail/pythonmac-sig/2013-May/023888.html
 import wikipedia
 import datetime
 import pyaudio
 import time 
 import sys
-import json
 import subprocess
 import webbrowser
-import tkinter as tk
-from tkinter import *
 
-# print("Hint: The Admiral of the mighty Claddish Navy.")
+newVoiceRate = 170
 
-# self_password = "kunkka"
-# f = open("comms.json")
-# engine = pyttsx3.init() 
-# nsss = None
-# engine = pyttsx3.init('nsss')
-nssp = NSSpeechSynthesizer
-
-
-# data = json.load(f)
-"""
-voices = engine.getProperty("voices")
-rate = engine.getProperty("rate")
-volume = engine.getProperty("volume")
-"""
-
-voices = nssp.getProperty("voices")
-rate = nssp.getProperty("rate")
-volume = nssp.getProperty("volume")
-
-"""
-engine.setProperty("voice", voices[1].id)
-engine.setProperty("rate", 125)
-engine.setProperty("volum", 1.0)
-"""
-
-
-nssp.getProperty("voice", voices[1].id)
-nssp.getProperty("rate", 125)
-nssp.getProperty("volume", 1.0)
+engine = pyttsx3.init()
+engine.setProperty("voice", "voice[1].id")
+engine.setProperty("rate", newVoiceRate)
 
 def speak(text):
-  nssp.say(text)
-  nssp.runAndWait()
-  nssp.stop()
-
-"""
-while True:
-  speak("Please enter password here: ")
-  UserInput = input("Please enter password here: ")
-  if UserInput == self_password:
-    speak("Access Granted.")    
-    print("Access Granted.")
-    break
-  else: 
-      speak("Incorrect password, please try again.")
-      print(f"Incorrect password, please try again.")
-
-for i in data["comms"]:
-  print(i)
-"""
+      engine.say(text)
+      engine.runAndWait()
 
 # depending on the time, computer will say greetings below:
 def wishGreetings():
@@ -101,12 +53,9 @@ def TakeCommands():
 
 speak("Hello there user, I will be your assistant for today.")  
 print(f"Hello there user, I will be your assistant for today.")
-f.close()
 wishGreetings()
 
 if __name__ == "__main__":
-  main()
-  sys.exit(0)
 
   while True:
     speak("How can I help?")
